@@ -6,6 +6,61 @@
 
 # Create Github Account
 
+Login to GitHub using the Linux CLI, follow these steps:
+
+Open a terminal window on your Linux machine.
+
+Install Git if it is not already installed by running the following command:
+
+```
+sudo apt-get install git
+```
+
+Once Git is installed, navigate to the directory where you want to store your GitHub repository by using the cd command.
+
+Run the following command to configure your Git username and email address:
+
+```
+git config --global user.name "Your Name"
+git config --global user.email "your_email@example.com"
+```
+
+Replace "Your Name" with your name, and "your_email@example.com" with your email address.
+
+Generate a new personal access token (PAT) on GitHub by following these steps:
+
+Log in to your GitHub account.
+Click on your profile picture in the top-right corner of the screen and select "Settings" from the dropdown menu.
+Click on "Developer settings" in the left sidebar.
+Click on "Personal access tokens".
+Click on "Generate new token".
+Enter a name for your token and select the appropriate scopes for your needs.
+Click on "Generate token".
+
+In your terminal window, run the following command:
+
+```
+git config --global credential.helper store
+```
+
+This command tells Git to store your credentials in plaintext on disk.
+
+Run the following command to open the Git credentials file in a text editor:
+
+```
+nano ~/.git-credentials
+```
+
+Add the following line to the file, replacing "your_username" with your GitHub username and "your_token" with the PAT you generated in step 5:
+
+```
+https://your_username:your_token@github.com
+```
+
+Save the file and exit the text editor.
+
+That's it! You are now logged in to GitHub using the Linux CLI, and you can use Git to push and pull changes to and from your GitHub repositories.
+
 # Login to Dockerhub account via Docker CLI
 
 
