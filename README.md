@@ -14,7 +14,7 @@
 Here's an example Dockerfile that pulls an image from a private registry:
 
 
-````
+```
 FROM private-registry.example.com/my-image:latest
 ```
 
@@ -27,7 +27,7 @@ FROM private-registry.example.com/my-image:latest
 ARG REGISTRY_USER
 ARG REGISTRY_PASSWORD
 RUN echo "$REGISTRY_PASSWORD" | docker login --username "$REGISTRY_USER" --password-stdin private-registry.example.com
-````
+```
 
 In this example, the ARG instructions define variables that can be passed to the docker build command using the --build-arg option. The RUN instruction logs in to the private registry using the provided credentials.
 
