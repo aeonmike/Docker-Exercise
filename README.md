@@ -63,6 +63,33 @@ That's it! You are now logged in to GitHub using the Linux CLI, and you can use 
 
 # Login to Dockerhub account via Docker CLI
 
+To log in to your Docker Hub account via the Docker CLI, follow these steps:
+
+Open a terminal window on your machine.
+
+Run the following command:
+
+```
+docker login
+```
+
+This will prompt you for your Docker Hub username and password.
+
+```
+Enter your Docker Hub username and press Enter.
+```
+
+```
+Enter your Docker Hub password and press Enter.
+```
+
+If you have two-factor authentication (2FA) enabled on your Docker Hub account, you will be prompted to enter a one-time verification code. You can obtain the code from your 2FA app or device.
+
+If your credentials are correct, you will see a message that says "Login Succeeded".
+
+That's it! You are now logged in to your Docker Hub account via the Docker CLI, and you can use Docker to push and pull images to and from Docker Hub.
+
+
 
 # Pull Images from docker
 
